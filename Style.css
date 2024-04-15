@@ -1,0 +1,395 @@
+/* Hauteur du corps de la page*/
+body {
+    height: 100%;
+}
+/* Style de la barre de navigation */
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffc0cb;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: red;
+    border-bottom: 2px solid black;
+}
+
+nav img{
+    float: left;
+    width: 25%;
+	height: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:"";
+    font-size: 12px;
+}
+
+/*Style du Timer*/
+#timer {
+    text-align: center;
+    font-weight: bold;
+    background:linear-gradient(120deg, #fa4d78  0%, #ffc0cb 100%);
+}
+/*Style des conditions de ventes*/
+.Principale {
+    width: 100%;
+    display: flex;
+}
+.gauche {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;  
+}
+.milieu {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;  
+}
+.droite {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.gauche img {
+    width: 200px;
+    height: 200px;
+}
+.milieu img {
+    width: 200px;
+    height: 200px;
+}
+.droite img {
+    width: 200px;
+    height: 200px;
+}
+
+/*Style du Slider*/
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 550px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+/*Style de la balise h1*/
+h1 {
+    text-align: center;
+}
+/*Style des bouttons*/
+.btn-toolbar {
+    width: 100%;
+    text-align: center;
+}
+
+.Theme button {
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 2.7em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px solid #ff0000;
+    box-shadow: 3px 3px 12px #8064a2;
+    -webkit-box-shadow: 3px 3px 12px #8064a2;
+    -moz-box-shadow: 3px 3px 12px #8064a2;
+    cursor: pointer;
+    }
+
+.btn-toolbar button {
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 2.7em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px solid #ff0000;
+    box-shadow: 3px 3px 12px #8064a2;
+    -webkit-box-shadow: 3px 3px 12px #8064a2;
+    -moz-box-shadow: 3px 3px 12px #8064a2;
+    cursor: pointer;
+        
+}
+
+.tableau button {
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 2.7em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px solid #ff0000;
+    box-shadow: 3px 3px 12px #8064a2;
+    -webkit-box-shadow: 3px 3px 12px #8064a2;
+    -moz-box-shadow: 3px 3px 12px #8064a2;
+    cursor: pointer;
+}
+
+
+button{
+    margin: 13px 12px 12px 10px;
+    cursor: pointer;
+    
+  }
+
+/*Style du bas de page*/
+footer {
+    height: 100%;
+    text-align: center;
+    background-color:#ffc0cb ;
+    bottom: 0;
+}
+
+/*Style des sections Contacts et Reseau*/
+
+.Info {
+    height: 100%;
+    text-align: center;
+    
+    width: 100%;
+    background-color: #f78fa0;
+}
+
+.Contact {
+    text-align: center;
+}
+
+.Reseau {
+    display: inline-block;
+    text-align: center;
+}
+.Reseau img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Style de la page A_Propos*/
+.Fenetre {
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.Propos {
+    text-align: center;
+    font-size: 24px;
+}
+.Carte {
+    text-align: center;
+}
+.Carte img {
+    width: 700px;
+    height: 500px;
+}
+
+
+.Membre {
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: solid;
+
+}
+
+table td {
+    border: solid;
+}
+
+table p {
+    font-size: 24px;
+}
+
+.Social {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.Social img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.Social p {
+    font-size: 24px;
+}
+/*Style des sections Produits*/
+.Produits {
+   width: 100%;
+   display: flex;
+   text-align: center;
+   
+}
+
+.Produits a p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.Produits img {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+p.Prix {
+    font-size: 50px;
+    color: red;
+}
+/*Style de la section des images et de la description des produits*/
+.important {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+/*Style des images des produits*/
+.images {
+    width: 50%;
+}
+.images img {
+    width: 250px;
+    height: 250px;
+}
+/*Style de la description des produits*/
+.description {
+    width: 50%;
+}
+.tableau {
+    height: 100%;
+    text-align: center;   
+}
+
+.tableau tr td {
+    border: none;
+}
+
+.tableau h2 {
+    font-size: 50px;
+    color: red;
+}
+/*Style de la section Recommandation de la page PC*/
+.Recommandation {
+    width: 100%;
+    text-align: center;
+}
+
+.Theme {
+    text-align: center;
+}
+
+/*Syle de l'image de la page Acheter*/
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 50%;
+}
+
